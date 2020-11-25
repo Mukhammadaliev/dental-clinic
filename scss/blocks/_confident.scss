@@ -1,0 +1,130 @@
+.confident {
+  padding: 35px 0;
+  display: flex;
+}
+.confident__wrapper {
+  display: flex;
+  margin-left: auto;
+  max-width: 2190px;
+}
+.confident__img {
+  vertical-align: middle;
+  margin-right: 60px;
+  display: flex;
+  flex-shrink: 0;
+  right: 0;
+  position: relative;
+  height: auto;
+  margin-left: 20px;
+}
+.confident__text-box {
+  max-width: 800px;
+  margin-left: auto;
+  position: relative;
+  &::before {
+    content: ":D :P";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-weight: bold;
+    font-size: 130px;
+    line-height: 152px;
+    color: rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+  }
+}
+.confident__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #FFD600;
+    margin: 0 0 16px auto;
+  }
+}
+.confident__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+@include breakpoint-down (1900) {
+  .confident__img {
+    right: -60px;
+  }
+  .confident__text-box {
+    margin-right: -60px;
+  }
+}
+@include breakpoint-down (1440) {
+  .confident__img {
+    right: -120px;
+  }
+  .confident__text-box {
+    margin-right: -120px;
+  }
+}
+@include breakpoint-down (1340) {
+  .confident__img {
+    right: -180px;
+  }
+  .confident__text-box {
+    margin-right: -180px;
+  }
+}
+@include breakpoint-down (1200) {
+  .confident__img {
+    right: -230px;
+  }
+  .confident__text-box {
+    margin-right: -230px;
+  }
+}
+@include breakpoint-down (1100) {
+  .confident__img {
+    right: -300px;
+  }
+  .confident__text-box {
+    margin-right: -300px;
+  }
+}
+@include breakpoint-down (1000) {
+  .confident__img {
+    right: -360px;
+  }
+  .confident__text-box {
+    margin-right: -360px;
+  }
+}
+@include breakpoint-down (1000) {
+  .confident__wrapper {
+    flex-direction: column-reverse;
+  }
+  .confident__img {
+    right: 0px;
+    margin-bottom: 10px;
+  }
+  .confident__text-box {
+    margin-right: 0px;
+    padding: 0 20px;
+    &::before {
+      left: 0;
+    }
+  }
+  .confident__title {
+  &::before {
+    margin: 0 auto 16px 0;
+  }
+}
+}

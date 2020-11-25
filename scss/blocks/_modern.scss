@@ -144,7 +144,6 @@
   .modern__wrapper {
     flex-direction: column;
     align-items: center;
-
   }
   .modern__text-box {
     width: 100%;
@@ -153,6 +152,7 @@
   .modern__img {
     left: 0px;
     margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
 @include breakpoint-down (600) {
