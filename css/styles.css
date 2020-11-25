@@ -1520,6 +1520,224 @@ img {
   }
 }
 
+.modern {
+  padding: 35px 0;
+}
+
+.modern__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modern__img {
+  vertical-align: middle;
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  height: auto;
+}
+
+.modern__text-box {
+  width: 50%;
+  position: relative;
+}
+
+.modern__text-box::before {
+  content: ":D :P";
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 152px;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+}
+
+.modern__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 15px;
+  max-width: 450px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modern__title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  margin: 0 0 16px;
+}
+
+.modern__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+
+.modern__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.modern__item {
+  max-width: 610px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  position: relative;
+}
+
+.modern__item:last-child {
+  margin-bottom: 0;
+}
+
+.modern__item::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 67px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.modern__item:nth-child(1)::before {
+  background-image: url("../img/modern-item1.png");
+}
+
+.modern__item:nth-child(2)::before {
+  background-image: url("../img/modern-item2.png");
+}
+
+.modern__item:nth-child(3)::before {
+  background-image: url("../img/modern-item3.png");
+}
+
+.modern-card__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.modern-card__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4D4D4D;
+}
+
+@media only screen and (max-width: 1440px) {
+  .modern__img {
+    left: -90px;
+    margin-right: -20px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .modern__img {
+    left: -110px;
+    margin-right: -50px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .modern__img {
+    left: -150px;
+    margin-right: -80px;
+  }
+  .modern__wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .modern__img {
+    left: -240px;
+    margin-right: -200px;
+  }
+  .modern__wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .modern__img {
+    left: -300px;
+    margin-right: -280px;
+  }
+  .modern__wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .modern__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modern__text-box {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .modern__img {
+    left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modern__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modern__item {
+    margin-bottom: 60px;
+    width: 85%;
+  }
+  .modern-card__text {
+    display: none;
+  }
+}
+
 .team {
   padding: 35px 0;
 }
