@@ -137,6 +137,9 @@
     width: 100%;
     background-color: #0055B8;
   }
+  .navbar-open .menu-burger {
+    background-image: url("../img/gamburger-close.svg");
+  }
   .no-js {
     flex-direction: column;
     position: relative;

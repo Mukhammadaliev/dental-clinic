@@ -879,6 +879,9 @@ img {
     width: 100%;
     background-color: #0055B8;
   }
+  .navbar-open .menu-burger {
+    background-image: url("../img/gamburger-close.svg");
+  }
   .no-js {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
