@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="main-body">
+  <header class="site-header">
+    <div class="site-header__top header-top">
+      <div class="container header-top__container">
+        <a href="tel:+73422162227" class="header-top__phone-number phone-number">
+          <h4 class="phone-number__title">Contact us</h4>
+          <p class="phone-number__text">+7(342)216-22-27</p>
+        </a>
+        <a href="#" class="header-top__logo logotip">
+          <img src="img/logo-img.png" alt="Logotip" width="84" height="34" class="logotip__img">
+          <p class="logotip__text">:Dental :Practice</p>
+        </a>
+        <div class="site-header__time work-time">
+          <h4 class="work-time__title">Open now</h4>
+          <p class="work-time__text">Today we work until <time class="work-time__grap" datetime="2020-20-20 19:00:00">19.00</time></p>
+        </div>
+      </div>
+    </div>
+    <div class="site-header__bottom header-bottom container">
+      <nav class="header-bottom__nav navbar">
+        <a href="#" class="navbar__logo">:<span class="navbar__yellow">D</span>ental :<span class="navbar__yellow">P</span>ractice</a>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__item-link">Services</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__item-link">Advantages</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__item-link">Team</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__item-link">Reviews</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__item-link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="navbar__social social-list">
+          <li class="socila-list__item">
+            <a href="#" class="social-list__link">
+              <img src="img/vk-icon.svg" alt="VK" width="29" height="28" class="social-list__img">
+            </a>
+          </li>
+          <li class="socila-list__item">
+            <a href="#" class="social-list__link">
+              <img src="img/instagram-icon.svg" alt="VK" width="16" height="16" class="social-list__img">
+            </a>
+          </li>
+          <li class="socila-list__item">
+            <a href="#" class="social-list__link">
+              <img src="img/twitter-icon.svg" alt="VK" width="19" height="18" class="social-list__img">
+            </a>
+          </li>
+        </ul>
+        <button class="menu-burger" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+     <section class="hero">
+      <div class="container slider-btn__container">
+        <div class="slider-bnt-wrapper">
+          <button class="slider-btn next-btn" type="button"></button>
+          <button class="slider-btn prew-btn" type="button"></button>
+        </div>
+      </div>
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <picture>
+                <source media="(max-width:400px)" srcset="img/hero-bg-550.png 1x, img/hero-bg-550@2x.png 2x">
+                <source media="(max-width:850px)" srcset="img/hero-bg-800.png 1x, img/hero-bg-800@2x.png 2x">
+                <source media="(max-width:1024px)" srcset="img/hero-bg-1000.png 1x, img/hero-bg-1000@2x.png 2x">
+                <source media="(max-width:1440px)" srcset="img/hero-bg1140.png 1x, img/hero-bg1140@2x.png 2x">
+              <img class="slider__img" src="./img/hero-bg.png" alt="rasm" width="1920" height="900"
+                srcset="./img/hero-bg.png 1x, ./img/hero-bg@2x.png 2x">
+            </picture>
+            <div class="container slider-info__container">
+              <div class="slider-info__wrapper">
+                <p class="slider__text">Modern technology and expert-class dentists</p>
+                <h2 class="slider__title">get a brilliant smile for every day</h2>
+                <a href="#" class="slider__btn global-btn">Get</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="container intro__container">
+        <ul class="intro__list">
+          <li class="intro__item intro-card">
+            <h3 class="intro-card__title">Treatment</h3>
+            <p class="intro-card__text">All types of dental treatment are carried out using the most modern technologies.</p>
+          </li>
+          <li class="intro__item intro-card">
+            <h3 class="intro-card__title">Prosthetics</h3>
+            <p class="intro-card__text">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
+          </li>
+        </ul>
+        <div class="intro-appointment">
+          <h3 class="intro-appointment__title">Appointment</h3>
+          <form class="intro-appointment__form intro-form" action="" method="POST">
+            <input type="text" class="intro-form__name" placeholder="Name" required>
+            <input type="tel" class="intro-form__phone" placeholder="Phone" required>
+            <button class="intro-form__btn global-btn">Appointment</button>
+            <div class="intro-form__chec checbox">
+              <p class="checbox__text">I give my consent to the storage and processing of personal data</p>
+              <label for="checked" class="checbox__label">
+                <input id="checked" class="checbox__form visually-hidden" type="checkbox">
+                <span class="checked__box"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container services__container">
+        <div class="services__text-box">
+          <h2 class="services__title">Services</h2>
+          <p class="services__text">We provide a wide range of services from treatment to prosthetics.
+          Therefore, you do not need to go anywhere else.</p>
+        </div>
+        <div class="services__wrapper">
+          <button class="services__btn services__btn--left"></button>
+          <ul class="services__list">
+            <li class="services__item">
+              <a href="" class="services__link card">
+                <h3 class="card__title">Dental treatment</h3>
+                <span class="card__line"></span>
+                <p class="card__sena-def">5000₽</p>
+                <p class="card__sena">3100₽</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link card">
+                <h3 class="card__title">Hygiene</h3>
+                <span class="card__line"></span>
+                <p class="card__sena-def">5000₽</p>
+                <p class="card__sena">3100₽</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link card">
+                <h3 class="card__title">Dental treatment</h3>
+                <span class="card__line"></span>
+                <p class="card__sena-def">5000₽</p>
+                <p class="card__sena">3100₽</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link card">
+                <h3 class="card__title">Dental treatment</h3>
+                <span class="card__line"></span>
+                <p class="card__sena-def">5000₽</p>
+                <p class="card__sena">3100₽</p>
+              </a>
+            </li>
+          </ul>
+          <button class="services__btn services__btn--right"></button>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <div class="team__text-box">
+          <h2 class="team__title">Professional team</h2>
+          <p class="team__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists.
+          All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+        </div>
+        <div class="team__wrapper">
+          <button class="team__btn team__btn--left"></button>
+          <ul class="team__list">
+            <li class="team__item team-card">
+                <img src="img/team-item1.jpg" alt="Dantist" width="300" height="350" class="team-card__img">
+                <h3 class="team-card__title">Anna Petrova</h3>
+                <p class="team-card__text">Expert-class dentist</p>
+            </li>
+            <li class="team__item team-card">
+                <img src="img/team-item2.jpg" alt="Dantist" width="300" height="350" class="team-card__img">
+                <h3 class="team-card__title">Ivan Ivanov</h3>
+                <p class="team-card__text">Expert-class dentist</p>
+            </li>
+            <li class="team__item team-card">
+                <img src="img/team-item3.jpg" alt="Dantist" width="300" height="350" class="team-card__img">
+                <h3 class="team-card__title">Larisa Vasileva</h3>
+                <p class="team-card__text">Expert-class dentist</p>
+            </li>
+          </ul>
+          <button class="team__btn team__btn--right"></button>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__text-box">
+          <h2 class="feedback__title">Professional team</h2>
+          <p class="feedback__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists.
+          All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+        </div>
+          <ul class="feedback__list">
+            <li class="feedback__item feedback-card">
+                <img src="img/feedback-item1.jpg" alt="Dantist" width="300" height="350" class="feedback-card__img">
+                <h3 class="feedback-card__title">Ivanov Ivan</h3>
+                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </li>
+            <li class="feedback__item feedback-card">
+                <img src="img/feedback-item2.jpg" alt="Dantist" width="300" height="350" class="feedback-card__img">
+                <h3 class="feedback-card__title">Vasilisova Vasilisa</h3>
+                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </li>
+            <li class="feedback__item feedback-card">
+                <img src="img/feedback-item2.jpg" alt="Dantist" width="300" height="350" class="feedback-card__img">
+                <h3 class="feedback-card__title">Petrov Petr</h3>
+                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </li>
+          </ul>
+          <div class="feedback__link-box">
+            <a href="#" class="feedback__link">Give feedback</a>
+          </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script>
+    var elModalToggler = document.querySelector('.menu-burger');
+    var elModal = document.querySelector('.header-bottom__nav');
+    var elModalClose = document.querySelector('.navbar-open');
+    var elNoJs = document.querySelector('.no-js')
+
+    elModalToggler.addEventListener('click', function () {
+      elModal.classList.toggle('navbar-open');
+    });
+  </script>
+</body>
+</html>

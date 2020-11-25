@@ -1,0 +1,102 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 222;
+}
+.site-header__top {
+  background-color: #fff;
+  padding: 12px 0 64px;
+}
+.header-top__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top__phone-number {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.phone-number__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 3px;
+}
+.phone-number__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}
+.header-top__logo {
+  text-align: center;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.logotip__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 6px;
+}
+.logotip__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0055B8;
+
+}
+.work-time__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00B007;
+  margin-bottom: 3px;
+}
+.work-time__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.site-header__bottom {
+  background-color: #0055B8;
+  border-radius: 5px;
+  margin-top: -50px;
+}
+
+@include breakpoint-down (1024) {
+  .site-header__top {
+    display: none;
+  }
+  .site-header__bottom {
+    margin-top: 0;
+  }
+}@include breakpoint-down (850) {
+  .site-header__bottom {
+    border-radius: 0;
+  }
+  .header-no-js {
+    position: relative;
+  }
+}
