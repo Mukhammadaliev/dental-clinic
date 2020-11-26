@@ -6,7 +6,7 @@
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="main-body">
+<body class="main-body no-js">
   <header class="site-header">
     <div class="site-header__top header-top">
       <div class="container header-top__container">
@@ -334,9 +334,7 @@
                     elModal.classList.toggle('navbar-open');
                   });
 
-                  elBody.addEventListener('click', function () {
-                    elModal.classList.remove('no-js');
-                  });
+                    elNoJs.classList.remove('no-js');
 
                 </script>
               </body>
