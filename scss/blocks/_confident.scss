@@ -1,11 +1,13 @@
 .confident {
   padding: 35px 0;
+  overflow-x: hidden;
 }
 .confident__wrapper {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 2000px;
+  overflow-x: hidden;
 }
 .confident__img {
   display: inline-block;
@@ -14,7 +16,7 @@
   margin-left: 50px;
 }
 .confident__text-box {
-  width: 50%;
+  min-width: 800px;
   &::before {
     content: ":D :P";
     display: inline-block;
@@ -55,30 +57,22 @@
   margin-bottom: 27px;
 }
 
-@include breakpoint-down (1800) {
+@include breakpoint-down (1700) {
   .confident__img {
     transform: translateX(100px);
+
   }
   .confident__text-box {
     transform: translateX(100px);
-  }
-}
-@include breakpoint-down (1600) {
-  .confident__img {
-    transform: translateX(200px);
-  }
-  .confident__text-box {
-    transform: translateX(200px);
+    min-width: 600px;
   }
 }
 @include breakpoint-down (1440) {
   .confident__img {
-    transform: translateX(260px);
+    transform: translateX(240px);
   }
   .confident__text-box {
-    transform: translateX(260px);
-    min-width: 50%;
-    padding-right: 30px;
+    transform: translateX(240px);
   }
 }
 @include breakpoint-down (1000) {

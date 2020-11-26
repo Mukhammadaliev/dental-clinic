@@ -1878,6 +1878,7 @@ img {
 
 .confident {
   padding: 35px 0;
+  overflow-x: hidden;
 }
 
 .confident__wrapper {
@@ -1887,6 +1888,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 2000px;
+  overflow-x: hidden;
 }
 
 .confident__img {
@@ -1897,7 +1899,7 @@ img {
 }
 
 .confident__text-box {
-  width: 50%;
+  min-width: 800px;
 }
 
 .confident__text-box::before {
@@ -1947,7 +1949,7 @@ img {
   margin-bottom: 27px;
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1700px) {
   .confident__img {
     -webkit-transform: translateX(100px);
             transform: translateX(100px);
@@ -1955,30 +1957,18 @@ img {
   .confident__text-box {
     -webkit-transform: translateX(100px);
             transform: translateX(100px);
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .confident__img {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
-  }
-  .confident__text-box {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    min-width: 600px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .confident__img {
-    -webkit-transform: translateX(260px);
-            transform: translateX(260px);
+    -webkit-transform: translateX(240px);
+            transform: translateX(240px);
   }
   .confident__text-box {
-    -webkit-transform: translateX(260px);
-            transform: translateX(260px);
-    min-width: 50%;
-    padding-right: 30px;
+    -webkit-transform: translateX(240px);
+            transform: translateX(240px);
   }
 }
 
