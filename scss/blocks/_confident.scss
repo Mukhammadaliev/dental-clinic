@@ -56,6 +56,31 @@
   color: #000000;
   margin-bottom: 27px;
 }
+.confident-box__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.confident-info__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.confident-info__link {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 36px;
+  padding: 24px 85px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0055B8;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
 
 @include breakpoint-down (1700) {
   .confident__img {
@@ -64,15 +89,15 @@
   }
   .confident__text-box {
     transform: translateX(100px);
-    min-width: 600px;
+    min-width: 700px;
   }
 }
 @include breakpoint-down (1440) {
   .confident__img {
-    transform: translateX(240px);
+    transform: translateX(60px);
   }
   .confident__text-box {
-    transform: translateX(240px);
+    transform: translateX(70px);
   }
 }
 @include breakpoint-down (1000) {
