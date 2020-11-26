@@ -111,7 +111,7 @@
     margin-right: auto;
   }
   .confident__text-box {
-    width: 100%;
+    min-width: 100%;
     transform: translateX(0);
     padding: 0 20px;
     &::before {
@@ -123,4 +123,15 @@
     margin: 0 auto 16px 0;
   }
 }
+}
+@include breakpoint-down (420) {
+  .confident-box__info {
+    flex-direction: column;
+  }
+  .confident-info__img {
+    margin-bottom: 15px;
+  }
+  .confident-info__link {
+    margin-left: 0;
+  }
 }

@@ -52,7 +52,7 @@
   line-height: 25px;
   color: #000000;
   margin-bottom: 27px;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto 15px;
 }
 .map__link {
@@ -69,7 +69,7 @@
 }
 @include breakpoint-down (1150) {
   .map__box {
-    top: 175px;
+    top: 275px;
     left: 0;
   }
 }
