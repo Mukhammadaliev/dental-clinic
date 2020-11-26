@@ -1679,7 +1679,7 @@ img {
   .modern__text-box {
     -webkit-transform: translateX(-260px);
             transform: translateX(-260px);
-    min-width: 60%;
+    min-width: 50%;
     padding-right: 30px;
   }
 }
@@ -1897,7 +1897,7 @@ img {
 }
 
 .confident__text-box {
-  max-width: 1000px;
+  width: 50%;
 }
 
 .confident__text-box::before {
@@ -1977,7 +1977,7 @@ img {
   .confident__text-box {
     -webkit-transform: translateX(260px);
             transform: translateX(260px);
-    min-width: 60%;
+    min-width: 50%;
     padding-right: 30px;
   }
 }
@@ -1993,14 +1993,16 @@ img {
             justify-content: center;
   }
   .confident__img {
-    right: 0px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   .confident__text-box {
     width: 100%;
-    margin-right: 0px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     padding: 0 20px;
   }
   .confident__text-box::before {
