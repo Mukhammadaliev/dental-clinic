@@ -53,11 +53,13 @@
   color: #000000;
   margin-bottom: 27px;
 }
-.map_link {
+.map__link {
   display: inline-block;
   vertical-align: baseline;
   position: relative;
   z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .map__img {
   display: inline-block;

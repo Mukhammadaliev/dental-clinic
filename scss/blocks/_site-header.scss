@@ -16,7 +16,8 @@
   justify-content: space-between;
 }
 .header-top__phone-number {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   vertical-align: baseline;
   text-decoration: none;
   &:hover {
@@ -24,6 +25,17 @@
   }
   &:active {
     opacity: 0.6;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url("../img/phone-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 4px;
   }
 }
 .phone-number__title {
@@ -63,7 +75,21 @@
   font-size: 14px;
   line-height: 16px;
   color: #0055B8;
-
+}
+.work-time {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url("../img/clock-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 4px;
+  }
 }
 .work-time__title {
   margin: 0;
@@ -98,5 +124,17 @@
   }
   .header-no-js {
     position: relative;
+  }
+}
+@include retina-bg {
+  .work-time {
+    &::before {
+    background-image: url("../img/clock-icon@2x.png");
+    }
+  }
+  .header-top__phone-number {
+    &::before {
+    background-image: url("../img/phone-icon@2x.png");
+    }
   }
 }

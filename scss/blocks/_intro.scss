@@ -155,3 +155,13 @@
     width: 100%;
   }
 }
+@include retina-bg {
+  .intro__item {
+  &:nth-child(1)::before {
+    background-image: url("../img/intro-item1@2x.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../img/intro-item2@2x.png");
+  }
+}
+}

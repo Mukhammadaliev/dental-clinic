@@ -40,7 +40,7 @@
 }
 .prew-btn {
   background-image: url("../img/arrow-prew.svg");
-  background-size: 25px 50px;
+  background-size: 18px 35px;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -64,6 +64,13 @@
   width: 42px;
   border-radius: 5px;
   height: 49px;
+  outline: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 .services__btn--left {
   background-image: url("../img/services-btn-prev.svg");
@@ -78,6 +85,13 @@
   width: 42px;
   border-radius: 5px;
   height: 49px;
+  outline: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 .team__btn--left {
   background-image: url("../img/services-btn-prev.svg");

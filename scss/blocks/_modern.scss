@@ -167,3 +167,17 @@
     display: none;
   }
 }
+
+@include retina-bg {
+  .modern__item {
+  &:nth-child(1)::before {
+    background-image: url("../img/modern-item1@2x.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../img/modern-item2@2x.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../img/modern-item3@2x.png");
+  }
+}
+}

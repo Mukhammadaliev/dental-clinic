@@ -25,7 +25,8 @@
 .slider__img {
   position: relative;
   top: -35px;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   object-fit: cover;
 }
