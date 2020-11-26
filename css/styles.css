@@ -744,8 +744,11 @@ img {
   .site-header__bottom {
     border-radius: 0;
   }
-  .header-no-js {
+  .no-js .site-header {
     position: relative;
+  }
+  .no-js {
+    margin-top: 0;
   }
 }
 
@@ -947,7 +950,7 @@ img {
   .navbar-open .menu-burger {
     background-image: url("../img/gamburger-close.svg");
   }
-  .no-js {
+  .no-js .navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2025,7 +2028,6 @@ img {
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 15px;
-  max-width: 450px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2196,7 +2198,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #4D4D4D;
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto 35px;
 }
 
@@ -2357,6 +2359,8 @@ img {
   line-height: 25px;
   color: #000000;
   margin-bottom: 27px;
+  width: 900px;
+  margin: 0 auto 15px;
 }
 
 .map__link {

@@ -122,8 +122,11 @@
   .site-header__bottom {
     border-radius: 0;
   }
-  .header-no-js {
+  .no-js .site-header {
     position: relative;
+  }
+  .no-js {
+    margin-top: 0;
   }
 }
 @include retina-bg {
