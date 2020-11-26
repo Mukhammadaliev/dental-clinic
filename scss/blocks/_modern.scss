@@ -3,6 +3,9 @@
 }
 .modern__wrapper {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2000px;
 }
 .modern__img {
   vertical-align: middle;
@@ -13,7 +16,7 @@
   height: auto;
 }
 .modern__text-box {
-  width: 50%;
+  width: 800px;
   position: relative;
   &::before {
     content: ":D :P";

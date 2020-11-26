@@ -1,11 +1,11 @@
 .confident {
   padding: 35px 0;
-  display: flex;
 }
 .confident__wrapper {
   display: flex;
   margin-left: auto;
-  max-width: 2190px;
+  margin-right: auto;
+  max-width: 2000px;
 }
 .confident__img {
   vertical-align: middle;
@@ -18,7 +18,7 @@
   margin-left: 20px;
 }
 .confident__text-box {
-  max-width: 800px;
+  width: 800px;
   margin-left: auto;
   position: relative;
   &::before {
@@ -110,12 +110,14 @@
 @include breakpoint-down (1000) {
   .confident__wrapper {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .confident__img {
     right: 0px;
     margin-bottom: 10px;
   }
   .confident__text-box {
+    width: 100%;
     margin-right: 0px;
     padding: 0 20px;
     &::before {
