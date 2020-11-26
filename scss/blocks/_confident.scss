@@ -8,19 +8,13 @@
   max-width: 2000px;
 }
 .confident__img {
+  display: inline-block;
   vertical-align: middle;
-  margin-right: 60px;
-  display: flex;
-  flex-shrink: 0;
-  right: 0;
-  position: relative;
   height: auto;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .confident__text-box {
-  width: 800px;
-  margin-left: auto;
-  position: relative;
+  max-width: 1000px;
   &::before {
     content: ":D :P";
     display: inline-block;
@@ -40,6 +34,7 @@
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 15px;
+  max-width: 450px;
   display: inline-flex;
   flex-direction: column;
   &::before {
@@ -59,52 +54,31 @@
   color: #000000;
   margin-bottom: 27px;
 }
-@include breakpoint-down (1900) {
+
+@include breakpoint-down (1800) {
   .confident__img {
-    right: -60px;
+    transform: translateX(100px);
   }
   .confident__text-box {
-    margin-right: -60px;
+    transform: translateX(100px);
+  }
+}
+@include breakpoint-down (1600) {
+  .confident__img {
+    transform: translateX(200px);
+  }
+  .confident__text-box {
+    transform: translateX(200px);
   }
 }
 @include breakpoint-down (1440) {
   .confident__img {
-    right: -120px;
+    transform: translateX(260px);
   }
   .confident__text-box {
-    margin-right: -120px;
-  }
-}
-@include breakpoint-down (1340) {
-  .confident__img {
-    right: -180px;
-  }
-  .confident__text-box {
-    margin-right: -180px;
-  }
-}
-@include breakpoint-down (1200) {
-  .confident__img {
-    right: -230px;
-  }
-  .confident__text-box {
-    margin-right: -230px;
-  }
-}
-@include breakpoint-down (1100) {
-  .confident__img {
-    right: -300px;
-  }
-  .confident__text-box {
-    margin-right: -300px;
-  }
-}
-@include breakpoint-down (1000) {
-  .confident__img {
-    right: -360px;
-  }
-  .confident__text-box {
-    margin-right: -360px;
+    transform: translateX(260px);
+    min-width: 60%;
+    padding-right: 30px;
   }
 }
 @include breakpoint-down (1000) {
@@ -115,6 +89,8 @@
   .confident__img {
     right: 0px;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .confident__text-box {
     width: 100%;

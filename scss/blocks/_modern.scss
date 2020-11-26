@@ -5,19 +5,16 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: 2000px;
+  max-width: 1900px;
 }
 .modern__img {
+  display: inline-block;
   vertical-align: middle;
-  margin-right: 60px;
-  display: flex;
-  flex-shrink: 0;
-  position: relative;
   height: auto;
+  margin-right: 50px;
 }
 .modern__text-box {
-  width: 800px;
-  position: relative;
+  max-width: 1000px;
   &::before {
     content: ":D :P";
     display: inline-block;
@@ -104,44 +101,41 @@
   line-height: 20px;
   color: #4D4D4D;
 }
+@include breakpoint-down (1800) {
+  .modern__img {
+    transform: translateX(-100px);
+  }
+  .modern__text-box {
+    transform: translateX(-100px);
+  }
+}
+@include breakpoint-down (1600) {
+  .modern__img {
+    transform: translateX(-200px);
+  }
+  .modern__text-box {
+    transform: translateX(-200px);
+  }
+}
 @include breakpoint-down (1440) {
   .modern__img {
-    left: -90px;
-    margin-right: -20px;
+    transform: translateX(-260px);
+  }
+  .modern__text-box {
+    transform: translateX(-260px);
+    min-width: 60%;
+    padding-right: 30px;
   }
 }
-@include breakpoint-down (1400) {
+@include breakpoint-down (1240) {
   .modern__img {
-    left: -110px;
-    margin-right: -50px;
+    transform: translateX(-310px);
   }
-}
-@include breakpoint-down (1350) {
-  .modern__img {
-    left: -150px;
-    margin-right: -80px;
+  .modern__text-box {
+    transform: translateX(-310px);
+        min-width: 50%;
   }
-  .modern__wrapper {
-    padding: 0;
-  }
-}
-@include breakpoint-down (1150) {
-  .modern__img {
-    left: -240px;
-    margin-right: -200px;
-  }
-  .modern__wrapper {
-    padding: 0;
-  }
-}
-@include breakpoint-down (1050) {
-  .modern__img {
-    left: -300px;
-    margin-right: -280px;
-  }
-  .modern__wrapper {
-    padding: 0;
-  }
+
 }
 @include breakpoint-down (1000) {
   .modern__wrapper {
@@ -150,12 +144,12 @@
   }
   .modern__text-box {
     width: 100%;
+    transform: translateX(0);
     padding: 0 20px;
   }
   .modern__img {
-    left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
+    transform: translateX(0);
+    margin: 0 auto 10px;
   }
 }
 @include breakpoint-down (600) {
