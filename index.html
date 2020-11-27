@@ -17,7 +17,7 @@
             <p class="phone-number__text">+7(342)216-22-27</p>
           </div>
         </a>
-        <a href="#" class="header-top__logo logotip">
+        <a href="index.html" class="header-top__logo logotip">
           <img src="img/logo-img.png" alt="Logotip" width="84" height="34" class="logotip__img" srcset="img/logo-img.png 1x, img/logo-img@2x.png 2x">
           <p class="logotip__text">:Dental :Practice</p>
         </a>
@@ -32,7 +32,7 @@
     </div>
     <div class="site-header__bottom header-bottom container">
       <nav class="header-bottom__nav navbar">
-        <a href="#" class="navbar__logo">:<span class="navbar__yellow">D</span>ental :<span class="navbar__yellow">P</span>ractice</a>
+        <a href="index.html" class="navbar__logo">:<span class="navbar__yellow">D</span>ental :<span class="navbar__yellow">P</span>ractice</a>
         <ul class="navbar__list">
           <li class="navbar__item">
             <a href="#" class="navbar__item-link">Services</a>
@@ -52,27 +52,28 @@
         </ul>
         <ul class="navbar__social social-list">
           <li class="socila-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link" target="_blank" aria-label="Vkontakte logo">
               <img src="img/vk-icon.png" alt="VK" width="29" height="28" class="social-list__img" srcset="img/vk-icon.png 1x, img/vk-icon@2x.png 2x">
             </a>
           </li>
           <li class="socila-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link" target="_blank" aria-label="Instagram logo">
               <img src="img/instagram-icon.png" alt="VK" width="16" height="16" class="social-list__img" srcset="img/instagram-icon.png 1x, img/instagram-icon@2x.png 2x">
             </a>
           </li>
           <li class="socila-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link" target="_blank" aria-label="Twitter logo">
               <img src="img/twitter-icon.png" alt="VK" width="19" height="18" class="social-list__img" srcset="img/twitter-icon.png 1x, img/twitter-icon@2x.png 2x">
             </a>
           </li>
         </ul>
-        <button class="menu-burger" type="button"></button>
+        <button class="menu-burger" type="button" aria-label="open menu burger"></button>
       </nav>
     </div>
   </header>
   <main class="site-main">
     <section class="hero">
+      <h2 class="visually-hidden" aria-label="carusel">карусель</h2>
       <div class="container slider-btn__container">
         <div class="slider-bnt-wrapper">
           <button class="slider-btn next-btn" type="button"></button>
@@ -124,8 +125,8 @@
         <div class="intro-appointment">
           <h3 class="intro-appointment__title">Appointment</h3>
           <form class="intro-appointment__form intro-form" action="https://echo.htmlacademy.ru" method="POST">
-            <input type="text" class="intro-form__name" placeholder="Name" required>
-            <input type="tel" class="intro-form__phone" placeholder="Phone" required>
+            <input type="text" class="intro-form__name" aria-label="your name" placeholder="Name" required>
+            <input type="tel" class="intro-form__phone" aria-label="your phone number"  placeholder="Phone" required>
             <button class="intro-form__btn global-btn">Appointment</button>
             <div class="intro-form__chec checbox">
               <p class="checbox__text">I give my consent to the storage and processing of personal data</p>
@@ -146,7 +147,7 @@
             Therefore, you do not need to go anywhere else.</p>
           </div>
           <div class="services__wrapper">
-            <button class="services__btn services__btn--left"></button>
+            <button class="services__btn services__btn--left" type="button" aria-label="button prev"></button>
             <ul class="services__list">
               <li class="services__item">
                 <a href="" class="services__link card services__link--dental1">
@@ -181,7 +182,7 @@
                 </a>
               </li>
             </ul>
-            <button class="services__btn services__btn--right"></button>
+            <button class="services__btn services__btn--right" type="button" aria-label="button next"></button>
           </div>
         </div>
       </section>
@@ -220,7 +221,7 @@
                   All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
                 </div>
                 <div class="team__wrapper">
-                  <button class="team__btn team__btn--left"></button>
+                  <button class="team__btn team__btn--left" type="button" aria-label="button prev"></button>
                   <ul class="team__list">
                     <li class="team__item team-card">
                       <img src="img/team-item1.jpg" alt="Dantist" width="300" height="350" class="team-card__img" srcset="img/team-item1.jpg 1x, img/team-item1@2x.jpg 2x">
@@ -238,7 +239,7 @@
                       <p class="team-card__text">Expert-class dentist</p>
                     </li>
                   </ul>
-                  <button class="team__btn team__btn--right"></button>
+                  <button class="team__btn team__btn--right" type="button" aria-label="button next"></button>
                 </div>
               </div>
             </section>
